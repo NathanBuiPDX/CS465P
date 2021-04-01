@@ -1,0 +1,9 @@
+/* Add your code here */
+
+/* The colors used in this exercise are gray4, teal, lightteal */
+
+/* The width of the form is specified in the styles.css file  */
+
+body {
+  background-color: var(--teal);
+}
