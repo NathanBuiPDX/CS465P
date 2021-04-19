@@ -14,22 +14,22 @@ The exercises in this assignment are:
 
 The exercises in this assignment are:
 
+- Flexbox exercise
+- Flexbox exercise
+- CSS Grid exercise
+- Bootstrap Grid exercise
+- Bootstrap Form exercise
+
+## Homework 3 - JavaScript, Ajax, and APIs
+
+The exercises in this assignment are:
+
 - Fizzbuzz exercise
 - Change exercise
 - Reverse exercise
 - Email Validation exercise
 - Form exercise
 - API exercise
-
-## Homework 3 - JavaScript, Ajax, and APIs
-
-The exercises in this assignment are:
-
-- Flexbox exercise
-- Flexbox exercise
-- CSS Grid exercise
-- Bootstrap Grid exercise
-- Bootstrap Form exercise
 
 ## Homework 4 - Node.js, Express, and Templating Engines
 
