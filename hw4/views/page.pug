@@ -1,0 +1,8 @@
+include includes/head.pug
+body.bg-info
+  main.container.border.rounded.bg-light.w-50.mx-auto.mt-4.p-4
+    h1.mb-3.text-center #{heading}
+    include includes/navbar.pug
+    ol#results 
+      each item in results
+        li= item
