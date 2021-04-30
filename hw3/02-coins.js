@@ -6,7 +6,7 @@ let calculateChange = (input) => {
 console.log(calculateChange(4.62));
 // $4.62 ==> 4 dollars, 2 quarters, 1 dime, 2 pennies
 console.log(calculateChange(9.74));
-// $9.72 ==> 9 dollars, 2 quarters, 2 dimes, 4 pennies
+// $9.74 ==> 9 dollars, 2 quarters, 2 dimes, 4 pennies
 console.log(calculateChange(0.16));
 // $0.16 ==> 1 dime, 1 nickel, 1 penny
 console.log(calculateChange(15.11));
