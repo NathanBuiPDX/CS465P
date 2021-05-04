@@ -14,15 +14,10 @@ const url = 'https://restcountries.eu/rest/v2/all';
 app.get('/', (req, res) => {
   // render pug template for the index.html file
 
-  results = [
-    'Countries and Capitals',
-    'Most Populous Countries',
-    'Regions of the World',
-  ];
-
-  res.render('page', {
+  res.render('index', {
     heading: 'Countries of the World',
-    results: results,
+    main:
+      'Welcome to this application. Using the REST Countries API, we will be showing the countries and capitals of the world, the most populous countries in the world, and the number of countries in each region of the world',
   });
 });
 
@@ -39,7 +34,7 @@ app.get('/capitals', (req, res) => {
 });
 
 app.get('/populous', (req, res) => {
-  // filter the output array for the countries with population of 5ß0 million or more
+  // filter the output array for the countries with population of 50 million or more
   // sort the resulting array to show the results in order of population
   // map the resulting array into a new array with the country name and formatted population
 
