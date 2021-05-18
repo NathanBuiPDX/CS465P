@@ -1,4 +1,6 @@
 const express = require('express');
+const axios = require('axios');
+
 const app = express();
 const port = process.env.PORT || 5000;
 
@@ -16,8 +18,7 @@ app.get('/', (req, res) => {
 
   res.render('index', {
     heading: 'Countries of the World',
-    main:
-      'Welcome to this application. Using the REST Countries API, we will be showing the countries and capitals of the world, the most populous countries in the world, and the number of countries in each region of the world',
+    main: 'Welcome to this application. Using the REST Countries API, we will be showing the countries and capitals of the world, the most populous countries in the world, and the number of countries in each region of the world',
   });
 });
 
@@ -25,11 +26,11 @@ app.get('/capitals', (req, res) => {
   // map the output array to create an array with country names and capitals
   // check for empty data in the output array
 
-  results = ['Afghanistan', 'Aland Islands', 'Albania'];
+  let countries = ['Afghanistan', 'Aland Islands', 'Albania'];
 
   res.render('page', {
     heading: 'Countries and Capitals',
-    results: results,
+    results: countries,
   });
 });
 
@@ -38,11 +39,11 @@ app.get('/populous', (req, res) => {
   // sort the resulting array to show the results in order of population
   // map the resulting array into a new array with the country name and formatted population
 
-  results = ['China', 'India', 'United States of America'];
+  let populous = ['China', 'India', 'United States of America'];
 
   res.render('page', {
     heading: 'Most Populous Countries',
-    results: results,
+    results: populous,
   });
 });
 
@@ -50,11 +51,11 @@ app.get('/regions', (req, res) => {
   // reduce the output array in a resulting object that will feature the numbers of countries in each region
   // disregard empty data from the output array
 
-  results = ['Asia - 50', 'Europe - 53', 'Africa - 60'];
+  let regions = ['Asia - 50', 'Europe - 53', 'Africa - 60'];
 
   res.render('page', {
     heading: 'Regions of the World',
-    results: results,
+    results: regions,
   });
 });
 
