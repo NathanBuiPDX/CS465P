@@ -9,7 +9,7 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'pug');
 
 // REST Countries URL
-const url = 'https://restcountries.eu/rest/v2/all';
+const url = 'https://restcountries.com/v3.1/all';
 
 // Add your code here
 
