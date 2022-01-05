@@ -1,22 +1,18 @@
 # Full Stack Homework
 
-In this repo, you will find starter files for the homework assignments for Full Stack. Check the class D2L or Drive for more details on each assignment.
+In this repo, you will find starter files for the homework assignments for Full Stack. Check the Canvas classroom for more details on each assignment.
 
-## Homework 1 - HTML, CSS, and Accessibility
+## Homework 1 - Setup
+
+This are the setup intructions for setting up your private homework repository.
+
+## Homework 2 - HTML, Accessibility, CSS, and Bootstrap
 
 The exercises in this assignment are:
 
 1. Cards exercise
 2. Navbar exercise
 3. Form exercise
-
-## Homework 2 - CSS Layout and Bootstrap
-
-The exercises in this assignment are:
-
-1. Flexbox exercise
-2. Flexbox exercise
-3. CSS Grid exercise
 4. Bootstrap Grid exercise
 5. Bootstrap Form exercise
 

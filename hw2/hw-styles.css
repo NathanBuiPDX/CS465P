@@ -3,11 +3,15 @@ h1 {
   text-align: center;
 }
 
-/* Code for exercise 01-flex */
+a {
+  color: var(--teal);
+}
 
-/* Code for exercise 02-flex */
+/* Code for exercise 01-card */
 
-/* Code for exercise 03-grid */
+/* Code for exercise 02-navbar */
+
+/* Code for exercise 03-form */
 
 /* Code for exercise 04-bootstrap-grid */
 
