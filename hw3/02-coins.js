@@ -1,4 +1,4 @@
-let calculateChange = (input) => {
+const calculateChange = (input) => {
   // Add your code here
 };
 
