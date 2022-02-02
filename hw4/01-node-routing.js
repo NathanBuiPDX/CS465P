@@ -11,7 +11,7 @@ const port = process.env.PORT || 5000;
 
 // http://localhost:5000/check-cookies should return 'yes' / 'no' in plain text depending on whether the browser has the 'hello' cookie
 
-// for other routes, such as http://localhost:5000/other, this exercise should return a status code 404 with '404 - page not found' in html format
+// For other routes, such as http://localhost:5000/other, this exercise should return a status code 404 with '404 - page not found' in html format
 
 const server = http.createServer((req, res) => {
   const routes = [

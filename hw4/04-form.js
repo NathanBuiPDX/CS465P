@@ -2,11 +2,14 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 5000;
 
-// Add your code here
+// Use middleware static() to serve all static files in the given folder
+app.use(express.static('public'));
 
-app.use(/** ... */);
+// Use middleware urlencoded() to parse an incoming request with a urlencoded payload and return an objectß
+app.use(express.urlencoded({ extended: false }));
 
-app.post('/', (req, res) => {
+// POST request
+app.post('', (req, res) => {
   // Add your code here
 });
 

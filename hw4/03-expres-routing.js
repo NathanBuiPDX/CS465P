@@ -10,7 +10,7 @@ const port = process.env.PORT || 5000;
 
 // http://localhost:5000/cookie should return 'cookies… yummm' in plain text and set 'hello=world' as a cookie
 
-// for other routes, such as http://localhost:5000/other, this exercise should return a status code 404 with '404 - page not found' in html format
+// For other routes, such as http://localhost:5000/other, this exercise should return a status code 404 with '404 - page not found' in html format
 
 const routes = [
   'welcome',
