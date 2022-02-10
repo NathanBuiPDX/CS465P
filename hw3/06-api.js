@@ -1,6 +1,6 @@
-const url = 'https://restcountries.eu/rest/v2/all';
+const url = 'https://restcountries.com/v3.1/all';
 
-let getData = (url) => {
+const getData = (url) => {
   // Add your code here
 };
 

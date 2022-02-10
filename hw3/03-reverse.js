@@ -1,3 +1,3 @@
-document.querySelector('#reverse').onclick = function () {
+document.querySelector('#reverse').onclick = () => {
   // Add your code here
 };
