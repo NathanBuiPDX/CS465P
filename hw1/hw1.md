@@ -2,86 +2,96 @@
 
 ### Installation
 
-1. Install Git: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+1. Install [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
-2. Download VS Code as your code editor: https://code.visualstudio.com/
+2. Download [VS Code](https://code.visualstudio.com/) as your code editor.
 
-   - Launch VS Code from the command line: https://code.visualstudio.com/docs/editor/command-line#_launching-from-command-line
+   - Set Up VS Code to [launch from the command line](https://code.visualstudio.com/docs/editor/command-line#_launching-from-command-line).
 
-   - Install the following extensions to start with:
+   - Install the following extensions:
      - Live Server
-     - Prettier
-     - ESLint
      - Git Lens
      - Bracket Pair Colorizer
+     - Prettier
 
-3. Sign up for a GitHub account and the GitHub Student Pack: https://education.github.com/pack
+3. Sign up for a GitHub account and the [GitHub Student Pack](https://education.github.com/pack).
 
-4. Set up SSH keys for GitHub: https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/connecting-to-github-with-ssh
+4. Set up [SSH keys for GitHub](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/connecting-to-github-with-ssh).
 
-### Setting up the Homework Repo
+### Setting up the Homework Repo (with SSH)
 
 1. Navigate to your preferred folder and clone the repo.
 
 ```console
-$ git clone https://github.com/caterinasworld/fullstack-homework fullstack-homework
+$ git clone git@github.com:caterinasworld/fullstack-homework.git fullstack-homework
+
 Cloning into 'fullstack-homework'...
-remote: Enumerating objects: 8, done.
-remote: Counting objects: 100% (8/8), done.
-remote: Compressing objects: 100% (6/6), done.
-remote: Total 8 (delta 1), reused 0 (delta 0), pack-reused 0
-Unpacking objects: 100% (8/8), done.
+remote: Enumerating objects: 179, done.
+remote: Counting objects: 100% (179/179), done.
+remote: Compressing objects: 100% (98/98), done.
+remote: Total 179 (delta 94), reused 149 (delta 73), pack-reused 0
+Receiving objects: 100% (179/179), 39.81 KiB | 251.00 KiB/s, done.
+Resolving deltas: 100% (94/94), done.
+
 ```
 
-2. Navigate into your newly created `fullstack-homework` folder and rename the remote.
+2. Navigate into the newly created `fullstack-homework` folder and rename the remote.
 
 ```console
 $ cd fullstack-homework/
 
 $ git remote -v
-origin	  https://github.com/caterinasworld/fullstack-homework.git (fetch)
-origin	  https://github.com/caterinasworld/fullstack-homework.git (push)
+origin	git@github.com:caterinasworld/fullstack-homework.git (fetch)
+origin	git@github.com:caterinasworld/fullstack-homework.git (push)
 
-$ git remote rename origin upstream
-
-$ git remote -v
-upstream	https://github.com/caterinasworld/fullstack-homework.git (fetch)
-upstream	https://github.com/caterinasworld/fullstack-homework.git (push)
-```
-
-3. Navigate to your account on GitHub and create a **private repo**, i.e.private-student-repo-name.
-
-4. Add collaborator(s). Go to 'Settings' --> 'Manage Access' --> click the 'Invite a collaborator' button.
-
-5. Add the GitHub repo that you created as a remote.
-
-```console
-$ git remote add origin https://github.com/student/private-student-repo-name.git
+$ git remote rename origin homework
 
 $ git remote -v
-origin	  https://github.com/student/private-student-repo-name.git (fetch)
-origin	  https://github.com/student/private-student-repo-name.git  (push)
-upstream	hhttps://github.com/caterinasworld/fullstack-homework.git (fetch)
-upstream	https://github.com/caterinasworld/fullstack-homework.git (push)
+homework	git@github.com:caterinasworld/fullstack-homework.git (fetch)
+homework	git@github.com:caterinasworld/fullstack-homework.git (push)
 ```
 
-6. Update the branch name to 'main'.
+3. Navigate to your GitHub account and create a new **private repo**, i.e. student-repo-fullstack.
+
+   Important: Do not create a README file. There’s already one in the repository you have cloned.
+
+4. Add your TA as a collaborator.
+
+   Go to ‘Settings’ → ‘Manage Access’ → click the “Invite a collaborator’ button. Search for your TA’s username.
+   Check Canvas for your TA's username on GitHub.
+
+5. Add the private GitHub repository you created as a remote.
 
 ```console
+$ git remote add origin git@github.com:student-username/student-repo-fullstack.git
+
+$ git remote -v
+homework    git@github.com:caterinasworld/fullstack-homework.git (fetch)
+homework    git@github.com:caterinasworld/fullstack-homework.git (push)
+origin   git@github.com:student-username/student-repo-fullstack.git (fetch)
+origin   git@github.com:student-username/student-repo-fullstack.git (push)
+```
+
+6. Check the branch name. If it's not ‘main,’ update the branch name to ‘main’.
+
+```console
+$ git branch
+
 $ git branch -M main
 ```
 
-7. Push the files cloned into the newly created private remote.
+7. Push the files you cloned into the newly created private remote repository.
 
 ```console
 $ git push -u origin main
-Enumerating objects: 8, done.
-Counting objects: 100% (8/8), done.
+Enumerating objects: 163, done.
+Counting objects: 100% (163/163), done.
 Delta compression using up to 4 threads
-Compressing objects: 100% (6/6), done.
-Writing objects: 100% (8/8), 2.67 KiB | 1.33 MiB/s, done.
-Total 8 (delta 1), reused 0 (delta 0)
-remote: Resolving deltas: 100% (1/1), done.
+Compressing objects: 100% (74/74), done.
+Writing objects: 100% (163/163), 68.15 KiB | 13.63 MiB/s, done.
+Total 163 (delta 80), reused 163 (delta 80), pack-reused 0
+remote: Resolving deltas: 100% (80/80), done.
+To github.com:student-username/student-repo-fullstack.git
  * [new branch]      main -> main
 Branch 'main' set up to track remote branch 'main' from 'origin'.
 ```
@@ -90,4 +100,10 @@ Branch 'main' set up to track remote branch 'main' from 'origin'.
 
 ```console
 $ git push
+```
+
+9. When there are updates to the homework starter files, pull the new updates from the ‘homework’ remote.
+
+```console
+$ git pull homework main
 ```
