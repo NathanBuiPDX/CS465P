@@ -13,7 +13,7 @@ Check Canvas for more information on each assignment.
 
 ### Setting Up The Homework Repository
 
-For detailed instructions on how to set up the homework repo, start with the [_instructions_.md](https://github.com/caterinasworld/fullstack-homework/blob/main/hw1/_instructions.md) file.
+For detailed instructions on how to set up the homework repo, start with the instructions file in the hw1 folder.
 
 ### Checking for Updates
 
