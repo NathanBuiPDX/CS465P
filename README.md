@@ -4,7 +4,6 @@ In this repository, you will find starter files for the homework assignments for
 
 ### Homework Assignments
 
-- [Homework 0 - Git / Setup](https://github.com/caterinasworld/webdev-homework/blob/main/hw0/hw0.md)
 - Homework 1 - Setup and JavaScript
 - Homework 2 - JavaScript
 - Homework 3 - Node.js
