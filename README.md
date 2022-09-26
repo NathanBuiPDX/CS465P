@@ -1,41 +1,21 @@
-# CS 465P/565: Full Stack Web Development - Homework Repository
+## CS 465P/565: Full Stack Web Development - Homework Repository
 
 In this repository, you will find starter files for the homework assignments for CS 465P/565: Full Stack Web Development. Check the Canvas classroom for more details on each assignment.
 
-## Homework 1 - Setup
+### Homework Assignments
 
-Markdown file with the intructions for setting up the private homework repository.
+- [Homework 0 - Git / Setup](https://github.com/caterinasworld/webdev-homework/blob/main/hw0/hw0.md)
+- Homework 1 - Setup and JavaScript
+- Homework 2 - JavaScript
+- Homework 3 - Node.js
+- Homework 4 - Express and Templating Engines
 
-## Homework 2 - HTML, Accessibility, CSS, and Bootstrap
+Check Canvas for more information on each assignment.
 
-The exercises in this assignment are:
+### Setting Up The Homework Repository
 
-1. Cards 
-2. Navbar 
-3. Form 
-4. Bootstrap Grid 
-5. Bootstrap Form 
+For detailed instructions on how to set up the homework repo, start with the [_instructions_.md](https://github.com/caterinasworld/fullstack-homework/blob/main/hw1/_instructions.md) file.
 
-## Homework 3 - JavaScript, Ajax, and APIs
+### Checking for Updates
 
-The exercises in this assignment are:
-
-1. Fizzbuzz 
-2. Calculating Change 
-3. Reverse 
-4. Email Validation 
-5. Form 
-6. API 
-
-## Homework 4 - Node.js, Express, and Templating Engines
-
-The exercises in this assignment are:
-
-1. Node routing 
-2. URL parsing 
-3. Express routing 
-4. Form submission 
-5. Express session 
-6. Templates 
-
-## Homework 5 - Frameworks
+This repository will be updated throughout the course. Always check to see if there are updates before starting any homework assingment. If there are updates, make sure to pull them.
