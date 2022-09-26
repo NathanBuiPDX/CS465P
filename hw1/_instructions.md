@@ -1,4 +1,4 @@
-## Homework 0 - Setup Instructions
+## Homework 0 - Git / Setup
 
 ### Installation
 
@@ -20,7 +20,7 @@
 
 ### Setting up the Homework Repo (with SSH)
 
-1. Navigate to your preferred folder and clone the repo.
+1. Navigate to your preferred folder and clone the repository.
 
 ```console
 $ git clone git@github.com:caterinasworld/fullstack-homework.git fullstack-homework
@@ -51,7 +51,7 @@ homework	git@github.com:caterinasworld/fullstack-homework.git (fetch)
 homework	git@github.com:caterinasworld/fullstack-homework.git (push)
 ```
 
-3. Navigate to your GitHub account and create a new **private repo**, i.e. student-repo-fullstack.
+3. Navigate to your GitHub account and create a public repository, i.e. student-repo-fullstack.
 
    Important: Do not create a README file. There’s already one in the repository you have cloned.
 
