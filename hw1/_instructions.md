@@ -109,14 +109,12 @@ $ git pull homework main
 
 ### Submitting a Pull Request (PR)
 
-1. Create a new branch.
+1. Create a new branch. 
 
 ```console
 $ git branch <newbranch>
 $ git checkout <newbranch>
 ```
-
-      or 
 
 ```console
 $ git checkout -b <newbranch>
