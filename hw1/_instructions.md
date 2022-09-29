@@ -140,8 +140,14 @@ $ git push <remote> <branchname>
 
    In the description textarea, make sure to explain what changes you made, why you made those changes, and what feedback you are looking for.
 
-   For help writing the description for your pull request or for how to give feedabck, read this [blog post on pull requests from GitHub](https://github.blog/2015-01-21-how-to-write-the-perfect-pull-request/)
+### Required Reading
 
+- Use the [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript) for all JavaScript code submitted.
+- [How to Create a Pull Request | GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
+- [How to write the description for your pull request or for how to give feedabck](https://github.blog/2015-01-21-how-to-write-the-perfect-pull-request/)
+- Examples of pull requests:
+  - [Pull request in Fastify.js](https://github.com/fastify/fastify/pull/4264)
+  - [Pull request in GitHub Primer]([https://github.com/fastify/fastify/pull/4264](https://github.com/primer/react/pull/2337))
 
 
 
