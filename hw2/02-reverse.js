@@ -1,3 +1,3 @@
-document.querySelector('#reverse').onclick = () => {
-  // Add your code here
-};
+/** Exercise 02 - Reverse **/
+
+// Add your code here

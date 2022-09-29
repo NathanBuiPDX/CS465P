@@ -1,3 +1,5 @@
+/** Exercise 01 - Coins **/
+
 const calculateChange = (input) => {
   // Add your code here
 };
