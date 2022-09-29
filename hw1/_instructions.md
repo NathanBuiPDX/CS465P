@@ -114,9 +114,9 @@ $ git pull homework main
 ```console
 $ git branch <newbranch>
 $ git checkout <newbranch>
-```
 
-```console
+or
+
 $ git checkout -b <newbranch>
 ```
 
