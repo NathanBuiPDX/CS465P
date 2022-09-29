@@ -116,7 +116,7 @@ $ git branch <newbranch>
 $ git checkout <newbranch>
 ```
 
-   or 
+      or 
 
 ```console
 $ git checkout -b <newbranch>
