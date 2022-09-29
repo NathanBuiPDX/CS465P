@@ -136,7 +136,9 @@ $ git push <remote> <branchname>
 
 4. When your code is pushed to the remote, you will see a link to the PR in the commnand line. Alternatively, you can open the remote repository on GitHub and search for your PR in the "Pull requests" tab. 
 
-5. Add your TA and two students from the discussion group as reviewers on the PR.
+5. Add your TA and two students from the discussion group as reviewers on the pull request.
+
+   In the description textarea, make sure to explain what changes you made, why you made those changes, and what feedback you are looking for.
 
    For help writing the description for your pull request or for how to give feedabck, read this [blog post on pull requests from GitHub](https://github.blog/2015-01-21-how-to-write-the-perfect-pull-request/)
 
