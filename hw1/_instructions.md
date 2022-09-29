@@ -10,9 +10,8 @@
 
    - Install the following extensions:
      - Live Server
-     - Git Lens
-     - Bracket Pair Colorizer
      - Prettier
+     - Git Lens
 
 3. Sign up for a GitHub account and the [GitHub Student Pack](https://education.github.com/pack).
 
@@ -117,7 +116,7 @@ $ git branch <newbranch>
 $ git checkout <newbranch>
 ```
 
-or 
+   or 
 
 ```console
 $ git checkout -b <newbranch>
@@ -138,5 +137,9 @@ $ git push <remote> <branchname>
 4. When your code is pushed to the remote, you will see a link to the PR in the commnand line. Alternatively, you can open the remote repository on GitHub and search for your PR in the "Pull requests" tab. 
 
 5. Add your TA and two students from the discussion group as reviewers on the PR.
+
+   For help writing the description for your pull request or for how to give feedabck, read this [blog post on pull requests from GitHub](https://github.blog/2015-01-21-how-to-write-the-perfect-pull-request/)
+
+
 
 
