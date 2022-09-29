@@ -1,4 +1,4 @@
-## Homework 0 - Git / Setup
+## Instructions for Setup
 
 ### Installation
 
@@ -55,10 +55,10 @@ homework	git@github.com:caterinasworld/fullstack-homework.git (push)
 
    Important: Do not create a README file. There’s already one in the repository you have cloned.
 
-4. Add your TA as a collaborator.
+4. Add your TA and all your discussion group members as collaborators.
 
-   Go to ‘Settings’ → ‘Manage Access’ → click the “Invite a collaborator’ button. Search for your TA’s username.
-   Check Canvas for your TA's username on GitHub.
+   Go to ‘Settings’ → ‘Manage Access’ → click the “Invite a collaborator’ button. Search for everyone's names or GitHub handles. 
+   All GitHub handles were shared during the first discussion. See the Canvas home page for your TA's GitHub handle.
 
 5. Add the private GitHub repository you created as a remote.
 
@@ -107,3 +107,36 @@ $ git push
 ```console
 $ git pull homework main
 ```
+
+### Submitting a Pull Request (PR)
+
+1. Create a new branch.
+
+```console
+$ git branch <newbranch>
+$ git checkout <newbranch>
+```
+
+or 
+
+```console
+$ git checkout -b <newbranch>
+```
+
+2. Make changes to your code in that branch.
+
+3. Commit the changes to the remote.
+
+```console
+$ git add <filename>
+
+$ git commit -m <commitmessage>
+
+$ git push <remote> <branchname>
+```
+
+4. When your code is pushed to the remote, you will see a link to the PR in the commnand line. Alternatively, you can open the remote repository on GitHub and search for your PR in the "Pull requests" tab. 
+
+5. Add your TA and two students from the discussion group as reviewers on the PR.
+
+
