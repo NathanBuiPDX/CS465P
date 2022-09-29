@@ -147,7 +147,7 @@ $ git push <remote> <branchname>
 - [How to write the description for your pull request or for how to give feedabck](https://github.blog/2015-01-21-how-to-write-the-perfect-pull-request/)
 - Examples of pull requests:
   - [Pull request in Fastify.js](https://github.com/fastify/fastify/pull/4264)
-  - [Pull request in GitHub Primer]([https://github.com/fastify/fastify/pull/4264](https://github.com/primer/react/pull/2337))
+  - [Pull request in GitHub Primer](https://github.com/primer/react/pull/2337)
 
 
 
