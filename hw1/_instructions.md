@@ -59,7 +59,7 @@ homework	git@github.com:caterinasworld/fullstack-homework.git (push)
    Go to ‘Settings’ → ‘Manage Access’ → click the “Invite a collaborator’ button. Search for everyone's names or GitHub handles. 
    All GitHub handles were shared during the first discussion. See the Canvas home page for your TA's GitHub handle.
 
-5. Add the private GitHub repository you created as a remote.
+5. Add the GitHub repository you created as a remote.
 
 ```console
 $ git remote add origin git@github.com:student-username/student-repo-fullstack.git
@@ -79,7 +79,7 @@ $ git branch
 $ git branch -M main
 ```
 
-7. Push the files you cloned into the newly created private remote repository.
+7. Push the files you cloned into the newly created remote repository.
 
 ```console
 $ git push -u origin main
