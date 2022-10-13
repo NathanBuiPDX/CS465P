@@ -17,6 +17,4 @@ For detailed instructions on how to set up the homework repo, start with the ins
 
 ### Checking for Updates
 
-This repository will be updated throughout the course. Always check to see if there are updates before starting any homework assingment. If there are updates, make sure to pull them.
-
-test merge confict
+This repository will be updated throughout the course. Always check to see if there are updates before starting any homework assingment. If there are updates, make sure to pull them. To do so, run `git pull <remote> <branch>`.
