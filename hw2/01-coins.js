@@ -3,6 +3,7 @@ const COIN_VALUES = [100, 25, 10, 5, 1];
 const COIN_NAMES = ['dollars', 'quarters', 'dime', 'nickels', 'pennies'];
 const calculateChange = (input) => {
 	// Add your code here
+	if (input > 10) return "Error: the number is too large"
 	input *= 100;
 	let returnedValue = [];
 	let remainder = 0;
