@@ -4,16 +4,16 @@ const COIN_NAMES = ['dollars', 'quarters', 'dime', 'nickels', 'pennies'];
 const calculateChange = (input) => {
 	// Add your code here
 	input *= 100;
-	let returnedString = '';
+	let returnedValue = [];
 	let remainder = 0;
 	let quotient = 0;
 	for (let i = 0; i < COIN_VALUES.length; i++) {
 		quotient = (input / COIN_VALUES[i]) >> 0;
 		remainder = input % COIN_VALUES[i];
 		input = remainder;
-		if (quotient > 0) returnedString += `${quotient} ${COIN_NAMES[i]}, `;
+		if (quotient > 0) returnedValue.push(`${quotient} ${COIN_NAMES[i]`);
 	}
-	return returnedString.slice(0, -2);
+	return returnedString.join(', ');
 };
 
 // Sample Test Cases
