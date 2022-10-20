@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 5001;
 
 // Use middleware static() to serve all static files in the given folder
 app.use(express.static('public'));
