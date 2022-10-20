@@ -5,7 +5,7 @@
   "main": "01-routing.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon .\\01-routing.js"
+    "start": "nodemon .\\02-url.js"
   },
   "keywords": [],
   "author": "",
