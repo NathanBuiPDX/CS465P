@@ -11,7 +11,7 @@ const server = http.createServer((req, res) => {
   // use the URL interface to work with URLs
   // source: https://developer.mozilla.org/en-US/docs/Web/API/URL
   let url = new URL(req.url, `http://${req.headers.host}`);
-
+  console.log(url);
   let getRoutes = () => {
     let result = '';
 
@@ -30,8 +30,12 @@ const server = http.createServer((req, res) => {
 
     res.write(`<ul> ${routeResults} </ul>`);
   }
-
   // Add your code here
+  let table = "";
+  let style = "border:1px solid black;";
+  for(const [key, value] of url.searchParams) table += `<tr><td style = "${style}">${key}</td><td style = "${style}">${value}</td></tr>`;
+  console.log(table)
+  res.write(`<table style = "${style}"}>${table}</table>`);
 
   res.end();
 });

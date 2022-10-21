@@ -40,12 +40,54 @@ const server = http.createServer((req, res) => {
     res.writeHead(200, { 'Content-Type': 'text/html' });
     res.write(`<h1>Exercise 01</h1>`);
     res.write(`<ul> ${routeResults} </ul>`);
-    res.end();
+    return res.end();
   }
 
   // Add your code here
+  else if(req.url === '/welcome'){
+    res.writeHead(200, { 'Content-Type': 'text/html' });
+    res.write(`<h1>Welcome</h1>`);
+    return res.end();
+  }
+
+  else if(req.url === '/redirect'){
+    res.writeHead(302, { "Location": `http://${req.headers.host}/redirected` });
+    return res.end();
+  }
+  else if(req.url === '/redirected'){
+    res.writeHead(200, { 'Content-Type': 'text/html' });
+    res.write(`<h1>Redirected page</h1>`);
+    return res.end();
+  }
+  else if(req.url === '/cache'){
+    res.writeHead(200, { 'Content-Type': 'text/html', 'Cache-Control': 'max-age=86400' });
+    res.write(`<h1>this resource was cached</h1>`);
+    return res.end();
+  }
+
+  else if(req.url === '/cookie'){
+    res.writeHead(200, { 'Content-Type': 'text/html', 'Set-Cookie':  "hello=world"});
+    res.write(`<h1>cookies... yummm</h1>`);
+    return res.end();
+  }
+
+  else if(req.url === '/check-cookies'){
+    res.writeHead(200, { 'Content-Type': 'text/html' });
+    res.write(`<h1>Check cookie</h1>`);
+    let cookies =  req.headers.cookie;
+    let response = cookies.includes("hello=") ? "YES" : "NO";
+    res.write(`<h2>${response}</h2>`);
+    return res.end();
+  }
+
+  else{
+    res.writeHead(404, { 'Content-Type': 'text/html' });
+    res.write(`<h1>Page Not Found</h1>`);
+    return res.end();
+  }
 });
 
 server.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
+  console.log("FROM ex1");
 });
