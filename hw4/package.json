@@ -2,6 +2,19 @@
   "dependencies": {
     "axios": "^0.21.1",
     "express": "^4.17.1",
+    "nodemon": "^2.0.20",
     "pug": "^3.0.2"
-  }
+  },
+  "name": "hw4",
+  "version": "1.0.0",
+  "main": "01-routing.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon .\\01-routing.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }

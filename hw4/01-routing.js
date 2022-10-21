@@ -40,7 +40,45 @@ app.get('/', (req, res) => {
   res.end();
 });
 
-app.get('/welcome', (req, res) => {});
+app.get('/welcome', (req, res) => {
+  res.writeHead(200, { 'Content-Type': 'text/html' });
+  res.write(`<h1>welcome</h1>`);
+  res.end();
+});
+
+app.get('/redirect', (req, res) => {
+  res.redirect(302, '/redirected');
+});
+
+app.get('/redirected', (req, res) => {
+  res.writeHead(200, { 'Content-Type': 'text/html' });
+  res.write(`<h1>Redirected page</h1>`);
+  res.end();
+});
+
+app.get('/cache', (req, res) => {
+  res.set("Cache-Control", "public, max-age=86400");
+  res.writeHead(200, { 'Content-Type': 'text/html' });
+  res.write(`<h1>this resource was cached</h1>`);
+  res.end();
+});
+
+app.get('/cookie', (req, res) => {
+  res.cookie('hello','world');
+  res.writeHead(200, { 'Content-Type': 'text/html' });
+  res.write(`<h1>cookies... yummm</h1>`);
+  res.end();
+});
+
+app.get('/welcome', (req, res) => {
+  res.writeHead(200, { 'Content-Type': 'text/html' });
+  res.write(`<h1>welcome</h1>`);
+  res.end();
+});
+
+app.get('*', (req, res) => {
+  res.send("PAGE NOT FOUND", 404);
+})
 
 // Add your code here
 
