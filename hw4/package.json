@@ -2,16 +2,19 @@
   "dependencies": {
     "axios": "^0.21.1",
     "express": "^4.17.1",
+    "express-session": "^1.17.3",
     "nodemon": "^2.0.20",
     "pug": "^3.0.2"
   },
   "name": "hw4",
   "version": "1.0.0",
   "main": "01-routing.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon .\\01-routing.js"
+    "start-ex1": "nodemon 01-routing.js",
+    "start-ex2": "nodemon 02-session.js",
+    "start-ex3": "nodemon 03-form.js",
+    "start-ex4": "nodemon 04-templates.js"
   },
   "keywords": [],
   "author": "",
