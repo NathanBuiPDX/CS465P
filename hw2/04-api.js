@@ -12,7 +12,7 @@ const getData = (url) => {
         data.forEach(e => {
             let li=document.createElement('li');
             ul.append(li);
-            li.innerHTML=`${e.name.common} - ${e.population}`;
+            li.innerHTML=`${e.name.common} - ${e.population.toLocaleString()}`;
         });  
       })
       .catch((error) => {

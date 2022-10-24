@@ -1,9 +1,9 @@
 /** Exercise 01 - Coins **/
 const COIN_VALUES = [100, 25, 10, 5, 1];
-const COIN_NAMES = ['dollars', 'quarters', 'dime', 'nickels', 'pennies'];
+const COIN_NAMES = ['dollars', 'quarters', 'dimes', 'nickels', 'pennies'];
 const calculateChange = (input) => {
 	// Add your code here
-	if (input > 10) return "Error: the number is too large"
+	if (input > 10) return "Error: the number is too large";
 	input *= 100;
 	let returnedValue = [];
 	let remainder = 0;
@@ -12,9 +12,9 @@ const calculateChange = (input) => {
 		quotient = (input / COIN_VALUES[i]) >> 0;
 		remainder = input % COIN_VALUES[i];
 		input = remainder;
-		if (quotient > 0) returnedValue.push(`${quotient} ${COIN_NAMES[i]`);
+		if (quotient > 0) returnedValue.push(`${quotient} ${COIN_NAMES[i]}`);
 	}
-	return returnedString.join(', ');
+	return returnedValue.join(', ');
 };
 
 // Sample Test Cases
